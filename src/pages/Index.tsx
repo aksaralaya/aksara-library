@@ -38,14 +38,13 @@ export default function Index() {
 
             {/* Title */}
             <h1 className="mb-6 animate-fade-in" style={{ animationDelay: "0.15s" }}>
-              <span className="font-display text-5xl font-extrabold leading-tight tracking-tight md:text-7xl lg:text-8xl">
-                <span className="text-primary-foreground">Aksara</span>
-                <span className="text-gradient-gold">laya</span>
+              <span className="font-display text-5xl font-extrabold leading-tight tracking-tight text-gradient-emerald-gold drop-shadow-title md:text-7xl lg:text-8xl">
+                Aksaralaya
               </span>
             </h1>
 
-            {/* Description — bold & high contrast */}
-            <p className="mx-auto mb-12 max-w-xl text-lg font-medium leading-relaxed text-primary-foreground/90 md:text-xl animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            {/* Description — bold & high contrast, no transparency */}
+            <p className="mx-auto mb-12 max-w-xl text-lg font-semibold leading-relaxed text-primary-foreground md:text-xl animate-fade-in" style={{ animationDelay: "0.3s" }}>
               Sistem digitalisasi manajemen perpustakaan pesantren. Catat kehadiran, kelola data, dan tingkatkan semangat menuntut ilmu.
             </p>
 
