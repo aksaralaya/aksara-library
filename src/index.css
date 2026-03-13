@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 163 45% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 163 45% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 163 45% 15%;
+
+    --primary: 163 45% 19%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 42 40% 88%;
+    --secondary-foreground: 163 45% 15%;
+
+    --muted: 40 15% 92%;
+    --muted-foreground: 163 20% 35%;
+
+    --accent: 42 76% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 163 45% 19%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 163 45% 15%;
+    --sidebar-foreground: 40 30% 95%;
+    --sidebar-primary: 42 55% 78%;
+    --sidebar-primary-foreground: 163 45% 12%;
+    --sidebar-accent: 163 40% 22%;
+    --sidebar-accent-foreground: 40 30% 95%;
+    --sidebar-border: 163 35% 25%;
+    --sidebar-ring: 42 55% 78%;
+
+    --gold: 43 76% 42%;
+    --gold-light: 42 55% 72%;
+    --gold-glow: 43 85% 50%;
+    --gold-border: 43 60% 55%;
+    --green-deep: 163 45% 12%;
+    --green-medium: 163 45% 19%;
+    --green-light: 163 30% 30%;
+  }
+
+  .dark {
+    --background: 163 45% 8%;
+    --foreground: 40 30% 95%;
+    --card: 163 40% 12%;
+    --card-foreground: 40 30% 95%;
+    --popover: 163 40% 12%;
+    --popover-foreground: 40 30% 95%;
+    --primary: 42 55% 78%;
+    --primary-foreground: 163 45% 12%;
+    --secondary: 163 35% 20%;
+    --secondary-foreground: 40 30% 95%;
+    --muted: 163 30% 16%;
+    --muted-foreground: 40 15% 65%;
+    --accent: 42 76% 42%;
+    --accent-foreground: 163 45% 12%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 163 30% 20%;
+    --input: 163 30% 20%;
+    --ring: 42 55% 78%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(43, 85%, 55%) 0%, hsl(42, 70%, 68%) 50%, hsl(43, 85%, 50%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-emerald-gold {
+    background: linear-gradient(135deg, #1B4D3E 0%, #1B4D3E 40%, #D4AF37 75%, #C5A028 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .drop-shadow-title {
+    filter: drop-shadow(0 4px 8px rgba(10, 30, 24, 0.5)) drop-shadow(0 2px 4px rgba(10, 30, 24, 0.3));
+  }
+
+  .bg-gradient-hero {
+    background: linear-gradient(160deg, hsl(163, 50%, 10%) 0%, hsl(163, 45%, 17%) 40%, hsl(163, 40%, 13%) 100%);
+  }
+
+  .bg-gradient-cta {
+    background: linear-gradient(135deg, hsl(163, 45%, 17%) 0%, hsl(163, 50%, 22%) 100%);
+  }
+
+  .bg-gradient-gold {
+    background: linear-gradient(135deg, hsl(43, 76%, 42%) 0%, hsl(42, 70%, 55%) 100%);
+  }
+
+  .shadow-gold {
+    box-shadow: 0 6px 24px -4px hsl(43 76% 42% / 0.35);
+  }
+
+  .shadow-elegant {
+    box-shadow: 0 8px 32px -8px hsl(163 45% 12% / 0.12), 0 2px 8px -2px hsl(163 45% 12% / 0.06);
+  }
+
+  .shadow-card-hover {
+    box-shadow: 0 12px 40px -8px hsl(163 45% 12% / 0.18), 0 4px 12px -2px hsl(163 45% 12% / 0.08);
+  }
+
+  .border-gold {
+    border-color: hsl(43, 60%, 55%);
+  }
+
+  .islamic-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D4AF37' stroke-opacity='0.06' stroke-width='0.5'%3E%3Cpath d='M40 0L80 40L40 80L0 40Z'/%3E%3Ccircle cx='40' cy='40' r='15'/%3E%3Cpath d='M40 25L55 40L40 55L25 40Z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+
+}
